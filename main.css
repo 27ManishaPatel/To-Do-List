@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(209, 173, 129);
+  }
+  .mynote {
+    text-align: center;
+    
+  }
+  #mylist, .addbtn {
+    font-size: 25px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 248, 220);
+  }
+  #mylist {
+    width: 70%;
+  }
+  .addbtn {
+    width: 100px;
+  }
+  .addbtn:hover {
+    background-color: rgb(145, 141, 125);
+  }
+  #day {
+    font-size: 30px;
+    color: rgb(104, 52, 10);
+  }
+  .heading {
+  
+    font-size: 40px;
+    color: rgb(104, 52, 10);
+  }
+  .todolist {
+    border: 3px solid rgb(148, 48, 48);
+    margin-right: 250PX;
+      margin-left: 250px;
+      border-radius: 5%;
+      padding-bottom: 10px;
+      background-image: url(https://wallpaperaccess.com/full/1353542.jpg);
+      
+  }
+  ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+ 
+  ul li {
+      border: 1px solid #ddd;
+      margin-top: 1px;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      color: black;
+      display: block;
+      position: relative; 
+      margin-bottom: 5px;
+      padding-left: 50px;
+      margin-right: 10PX;
+      margin-left: 10px;
+      border-radius: 5%;  
+  }
+  
+  ul li:hover {
+      background-color: rgb(199, 177, 145);
+  }
+  #close {
+      cursor: pointer;  /* to show the user that this is a clickable element. */
+      position: absolute;  /* position the icons(child element) in relation to the <li>(parent) elements’ position.*/
+      top: 50%;
+      right: 0%;
+      padding: 12px 16px;
+      transform: translate(0%, -50%);/* transition value is for setting the duration of style change from normal to hover. 0.2 sec*/
+  }
+  #close:hover {
+      background-color: rgb(136, 112, 76);
+  }
+
+  ul li.checked {
+      background: #888;
+      color: #fff;
+      text-decoration: line-through;
+    }
+    ul li.checked::before {
+      content: '';
+      position: absolute;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      top: 10px;
+      left: 16px;
+      transform: rotate(45deg);
+      height: 15px;
+      width: 7px;
+    }
